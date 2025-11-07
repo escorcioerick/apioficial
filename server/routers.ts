@@ -28,11 +28,12 @@ export const appRouter = router({
         currency: z.enum(["USD", "BRL"]),
       }))
       .mutation(async ({ input }) => {
-        // Taxas base para Brasil (em USD)
+        // Taxas oficiais WhatsApp Business API - Brasil (vigência: julho 2025)
+        // Fonte: https://business.whatsapp.com/products/platform-pricing
         const baseRates = {
-          marketing: 0.025,
-          utility: 0.0068,
-          authentication: 0.004,
+          marketing: 0.0625,      // Marketing: sempre cobrado
+          utility: 0.0080,        // Utility: gratuito dentro da janela de 24h
+          authentication: 0.0315, // Authentication: sempre cobrado (com volume tiers)
         };
 
         // Volume tiers e descontos (apenas para utility e authentication)

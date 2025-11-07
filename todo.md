@@ -34,6 +34,22 @@
 - [x] Validar cálculos com dados reais
 
 ## Deploy
-- [ ] Copiar arquivos para repositório GitHub
-- [ ] Fazer commit e push
-- [ ] Criar checkpoint do projeto
+- [x] Copiar arquivos para repositório GitHub
+- [x] Fazer commit e push
+- [x] Criar checkpoint do projeto
+
+## Melhorias Solicitadas
+
+### Atualização de Taxas
+- [x] Acessar site oficial WhatsApp Business pricing
+- [x] Extrair taxas oficiais para Brasil
+- [x] Atualizar taxas no backend (routers.ts)
+- [x] Validar cálculos com taxas atualizadas
+
+### Animações
+- [x] Adicionar animações de entrada (fade-in, slide-in)
+- [x] Implementar transições suaves entre estados
+- [x] Animar cards de resultados
+- [x] Adicionar hover effects nos botões
+- [x] Implementar scroll animations
+- [x] Adicionar loading animations para cálculos
